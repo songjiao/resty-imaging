@@ -1,7 +1,7 @@
 # Makefile template for shared library
 
 CPP        = g++
-CXXFLAGS   = -fPIC -Wall -Wextra -O3 -g `pkg-config vips-cpp --cflags`
+CXXFLAGS   = -fPIC -Wall -std=c++11 -Wextra -O3 -g `pkg-config vips-cpp --cflags`
 LDFLAGS    = -shared `pkg-config vips-cpp --libs`
 RM         = rm -f 
 TARGET_LIB = libimaginghelpers.so
